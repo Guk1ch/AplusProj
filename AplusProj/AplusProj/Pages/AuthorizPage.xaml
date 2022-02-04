@@ -2,11 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplusProj.Pages.AuthorizPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ContentPage.Content >
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="Логин"/>
+                    <Frame BorderColor="Black" Padding="0">
+                        <Entry/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Пароль"/>
+                    <Frame BorderColor="Black" Padding="0">
+                        <Entry IsPassword="True"/>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
